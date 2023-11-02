@@ -2,20 +2,16 @@ package StarFigure;
 
 public class StarFigure_02 {
     //Shatunova Kateryna CS-12
+    public static final int HEIGHT = 7;
     public static void main(String[] args) {
-        int n = 5;
-        int m = 32;
-        int p = 8;
-        for (int i=0;i<n; i++){
-            int stars=i*p;
-            int slashes=(m-stars)/2;
-            for (int j=0;j<slashes;j++){
+        for (int i = 1; i <= HEIGHT; i++) {
+            for (int j = 1; j <= 4 * (-i + HEIGHT); j++) {
                 System.out.print("/");
             }
-            for (int j=0;j<stars;j++){
+            for (int k = 1; k <= 8 * i - 8; k++) {
                 System.out.print("*");
             }
-            for (int j=0;j<slashes;j++){
+            for (int l = 1; l <= 4 * (-i + HEIGHT); l++) {
                 System.out.print("\\");
             }
             System.out.println();
