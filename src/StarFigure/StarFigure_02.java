@@ -5,7 +5,7 @@ public class StarFigure_02 {
     public static void main(String[] args) {
         int n = 5;
         int m = 32;
-        int p = 4;
+        int p = 8;
         for (int i=0;i<n; i++){
             int stars=i*p;
             int slashes=(m-stars)/2;
