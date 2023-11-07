@@ -2,7 +2,7 @@ package StarFigure;
 
 public class StarFigure_02 {
     //Shatunova Kateryna CS-12
-    public static final int HEIGHT = 7;
+    public static final int HEIGHT = 5;
     public static void main(String[] args) {
         for (int i = 1; i <= HEIGHT; i++) {
             for (int j = 1; j <= 4 * (-i + HEIGHT); j++) {
